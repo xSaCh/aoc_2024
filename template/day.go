@@ -2,21 +2,29 @@ package main
 
 import (
 	"bufio"
+	"fmt"
+	"io"
 	"os"
 )
 
 func main() {
-	f, _ := os.Open("./input.txt")
+	f, _ := os.Open("INPUTFILEPATH")
 	defer f.Close()
-	sc := bufio.NewScanner(f)
-
-	// Start Here
+	fmt.Println(part1(f))
 }
 
-func part1([][]string) int {
+func part1(input io.Reader) int {
+	sc := bufio.NewScanner(input)
+	for sc.Scan() {
+		l := sc.Text()
+	}
 	return 0
 }
 
-func part2([][]string) int {
+func part2(input io.Reader) int {
+	sc := bufio.NewScanner(input)
+	for sc.Scan() {
+		l := sc.Text()
+	}
 	return 0
 }
