@@ -16,7 +16,7 @@ func main() {
 func part1(input io.Reader) int {
 	sc := bufio.NewScanner(input)
 	for sc.Scan() {
-		l := sc.Text()
+		_ = sc.Text()
 	}
 	return 0
 }
@@ -24,7 +24,8 @@ func part1(input io.Reader) int {
 func part2(input io.Reader) int {
 	sc := bufio.NewScanner(input)
 	for sc.Scan() {
-		l := sc.Text()
+		_ = sc.Text()
+
 	}
 	return 0
 }
